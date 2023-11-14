@@ -4,7 +4,9 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 import { ServicesComponent } from './services/services.component';
+import { SignupComponent } from './signup/signup.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 const routes: Routes = [
@@ -31,6 +33,14 @@ const routes: Routes = [
     {
       path: 'contactus',
       component: ContactusComponent
+    },
+    {
+      path: 'login',
+      component: LoginComponent
+    },
+    {
+      path: 'signup',
+      component: SignupComponent
     }
 ];
 

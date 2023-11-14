@@ -18,7 +18,7 @@ body {
     scroll-behavior: smooth;
     overflow: inherit !important;
 }
-input[type="text"], input[type="email"], input[type="tel"], input[type="date"], textarea, select {
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="password"], textarea, select {
   background: none;
   border: solid 1px #cecece;
   color: #444;
@@ -39,15 +39,16 @@ input[type="submit"] {
   background: var(--primary);
   text-transform: uppercase;
   border: none;
-  padding: 9px 25px;
+  padding: 11px 25px;
   font-size: 14px;
   border: 0;
   letter-spacing: 0.8px;
   cursor: pointer;
   outline: none;
   font-weight: 600;
-border-radius: 20px;
+  border-radius: 4px;
   font-family: 'Nunito Sans', sans-serif;
+  margin-top: 10px;
 }
 input[type="submit"]:hover {
   background: var(--secondary);
@@ -266,7 +267,9 @@ header .navmenu ul li a {
     font-weight: 400;
     font-size: 17px;
 }
-
+.navmenu a.current-menu {
+  color: var(--primary);
+}
 
 /* MAINSLIDER SECTION CSS */
 
@@ -410,7 +413,7 @@ header .navmenu ul li a {
 }
 .houselistinglist figure img {
   width: 100%;
-  height: 320px;
+  height: 300px;
   object-fit: cover;
   transition: .5s;
 }
@@ -432,12 +435,11 @@ header .navmenu ul li a {
 }
 
 .houselistinglist-info ul li {
-  padding: 8px 20px;
+  padding: 8px 12px;
   text-align: center;
   border: 1px solid #dcdcdc;
   width: 33.3%;
 }
-
 .houselistinglist-info .price {
   margin: 0;
 }
@@ -921,4 +923,23 @@ footer button span {
 }
 .contact-form label {
   margin-left: 8px;
+}
+
+/* LOGIN PAGE CSS */
+
+
+.loginform {
+  padding: 25px;
+  border: 1px solid #eee;
+  box-shadow: 0 0 20px #0021721f;
+}
+.loginform h2 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* SERVICES PAGE CSS */
+
+.secondary-container.services .row {
+  row-gap: 23px;
 }

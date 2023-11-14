@@ -15,7 +15,10 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ServicesComponent } from './services/services.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { BlogComponent } from './blog/blog.component';
-
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { FormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -28,7 +31,9 @@ import { BlogComponent } from './blog/blog.component';
     ContactusComponent,
     ServicesComponent,
     TestimonialsComponent,
-    BlogComponent
+    BlogComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +41,9 @@ import { BlogComponent } from './blog/blog.component';
     NgbModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

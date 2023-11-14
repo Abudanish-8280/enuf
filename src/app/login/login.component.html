@@ -1,0 +1,26 @@
+<div class="breadcrumb">
+    <div class="container">
+        <h2>Login</h2>
+        <ul>
+            <li><a routerLink="">Home</a></li>
+            <li>Login</li>
+        </ul>
+    </div>
+</div>
+
+<div class="secondary-container login">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 offset-4">
+                <div class="loginform">
+                    <h2>Login</h2>
+                    <form #loginform="ngForm" (ngSubmit)=loginFormData(loginform.value);>
+                        <input type="email" name="email" ngModel placeholder="Enter Email">
+                        <input type="password" name="password" ngModel placeholder="Password">
+                        <input type="submit" value="Submit" class="custom-btn-primary">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
